@@ -29,6 +29,8 @@ module tb_top_bcd_adder;
     );
 
     initial begin
+        $dumpfile("bcd_adder_waveform.vcd");
+        $dumpvars(0, tb_top_bcd_adder);
         errors = 0;
 
         // Test Case 1: 3 + 4 + 0 = 7
